@@ -5,4 +5,28 @@
 
 body {
     font-family:  monospace;
+    
+}
+hr{
+    border: 2px solid#1522dd;
+    margin: 20px 0px;
+}
+.grupocomandos{
+    display: flex;
+    justify-content: space-around;
+    margin-inline: 15px;
+}
+.cartaocomando {
+    
+    width: calc(25% - 15px);
+    border: 1px solid #000000;
+    border-radius: 25px;
+    padding: 10px 5px;
+    transition: 150ms;
+}
+
+.cartaocomando:hover {
+    scale: 105%;
+    background-color: darkslategray;
+    transform: translateY(-5%);
 }
