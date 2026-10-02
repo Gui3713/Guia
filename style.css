@@ -115,3 +115,14 @@ footer {
         width: calc(25% - 15px);
     }
 }
+
+:root {
+--fundo: #0b0b10;
+--card: #14141c;
+--borda: #25252f;
+--texto: #f82d12;
+--suave: #ec0a0a;
+--destaque: #f31212f3;
+--destaque-suave: rgba(139, 92, 246, 0.14);
+--mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
