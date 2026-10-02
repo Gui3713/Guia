@@ -18,8 +18,8 @@ body {
 header {
     padding: 20px;
     text-align: center;
-    background-color: #61616d;
-    color: #ececec;
+    background-color: #01011b;
+    color: #e1e1e4;
 }
 
 main {
@@ -27,7 +27,7 @@ main {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    background-color: #8a8787;
+    background-color: #140202;
     flex: 1;
 }
 
@@ -51,10 +51,10 @@ main h2 {
     min-height: 15vh;
     padding: 20px;
 
-    border: 5px solid #d0d3d3;
+    border: 5px solid #f3ecec;
     border-radius: 40px;
 
-    background-color: slategray;
+    background-color: rgba(233, 23, 23, 0.836);
     text-align: center;
 }
 
@@ -70,7 +70,7 @@ footer {
     min-height: 60px;
     padding: 10px;
 
-    background-color: lightslategrey;
+    background-color: rgba(6, 9, 192, 0.87);
     color: #ececec;
     text-align: center;
 }
@@ -116,13 +116,37 @@ footer {
     }
 }
 
-:root {
---fundo: #0b0b10;
---card: #14141c;
---borda: #25252f;
---texto: #f82d12;
---suave: #ec0a0a;
---destaque: #f31212f3;
---destaque-suave: rgba(139, 92, 246, 0.14);
---mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+body.tema-claro{
+    --fundo: #f5f5f5;
+    --card: #ffffff;
+    --bordas: #cccccc;
+    --texto: #000000;
+    --fundo-header: #e0e0e0;
+};
+body.tema-claro .grupocomandos {
+    background: rgba(245, 245, 247, 0.85);
 }
+ 
+body.tema-claro .cartaocomando {
+    background: var(--card);
+}
+.btn-tema {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--borda);
+    background: var(--card);
+    color: var(--texto);
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+ 
+.btn-tema::before {
+    content: "☾";
+    font-size: 1.1rem;
+}
+ 
+.btn-tema:hover {
+    border-color: var(--destaque);
+}
+ 
